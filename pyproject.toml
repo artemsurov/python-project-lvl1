@@ -7,8 +7,10 @@ packages =[{ include = "brain_games"},]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]
+wemake-python-styleguide = "^0.14.1"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
