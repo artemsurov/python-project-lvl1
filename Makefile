@@ -3,17 +3,17 @@
 install:
 	poetry install
 
-poetry-install:
-	poetry run brain-games
-
 build:
 	poetry build
 
-package-install:
-	pip install --user dist/*.whl
+package-install: build
+	pip install --user --no-build-isolation dist/*.whl
 
 lint:
 	poetry run flake8 brain_games
 
 test:
 	poetry run pytest
+
+update_pip:
+	python -m pip install --upgrade pip
