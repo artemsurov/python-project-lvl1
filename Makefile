@@ -1,4 +1,4 @@
-.PHONY: install poetry-install build package-install check
+.PHONY: install poetry-install build package-install check test
 
 install:
 	poetry install
@@ -14,3 +14,6 @@ package-install:
 
 lint:
 	poetry run flake8 brain_games
+
+test:
+	poetry run pytest
