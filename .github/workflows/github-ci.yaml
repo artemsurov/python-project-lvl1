@@ -27,7 +27,8 @@ jobs:
         run: poetry install
 
       - name: Install linters
-        uses: ricardochaves/python-lint@v1.3.0
+        uses: grantmcconnaughey/lintly-flake8-github-action@v1.0
+
 
       - name: Install pytest
         uses: cclauss/GitHub-Action-for-pytest@0.5.0
